@@ -1,0 +1,163 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  color: black;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  box-shadow: rgba(152, 152, 255, 0.096) 0px 10px 10px;
+  padding: 20px 30px;
+  background-color: rgb(152, 152, 255);
+  min-height: 91px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-primary {
+  color: rgb(152, 152, 255);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+li > a {
+  color: white;
+  font-weight: bolder;
+}
+li:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+#logo {
+  width: 40px;
+  height: auto;
+}
+.profile-icon {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 4px 5px;
+  transition: background-color 0.3s;
+}
+.profile-icon:hover {
+  background-color: white;
+  color: rgb(152, 152, 255);
+}
+.profile-icon:hover a p {
+  color: rgb(152, 152, 255);
+}
+.profile-icon > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile-icon > a > img {
+  border-radius: 50%;
+}
+.profile-icon > a > p {
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-button {
+  background-color: rgb(152, 152, 255);
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.primary-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 5px 10px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(152, 152, 255);
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  width: 100%;
+}
+.second {
+  text-align: center;
+  padding: 10px 20px;
+}
+.secondary-button {
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  color: white;
+  transition: background-color 0.3s;
+}
+.secondary-button:hover {
+  background-color: white;
+  color: rgb(152, 152, 255);
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  opacity: 0.8;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #e5e5f7 20%,
+      #e5e5f7 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #e5e5f7 20%,
+        #e5e5f7 80%,
+        transparent 80%,
+        transparent
+      )
+      10px 10px,
+    linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, #444cf7 0.8px, #e5e5f7 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+}

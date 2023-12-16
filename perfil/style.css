@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.50), rgba(5, 10, 5, 0.30)), url(/images/fondo5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #2b6ebb;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#loginblock {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 60px auto;
+    max-width: 50%;
+}
+
+#logimg{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logimg img {
+    max-width: 20%;
+
+}
+
+#loginblock  p {
+    text-align: left;
+    font-size: 20px;
+    margin: 10px 0;
+}
